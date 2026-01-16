@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  soc-agent-poc:
+    container_name: agentic-ai-soc-poc
+    build: .
+    volumes:
+      - ./data:/app/data
+    stdin_open: true
+    tty: true

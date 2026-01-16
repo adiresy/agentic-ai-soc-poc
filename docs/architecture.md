@@ -1,0 +1,1 @@
+This document describes the simplified SOC architecture used in the academic POC.
