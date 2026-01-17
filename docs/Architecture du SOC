@@ -1,0 +1,39 @@
+# Architecture du SOC – État initial et architecture cible avec IA (LLaMA)
+
+## 1. Architecture SOC sans intelligence artificielle (état initial)
+
+### 1.1 Description générale
+
+L’architecture SOC sans IA repose sur des mécanismes traditionnels de cybersécurité, principalement fondés sur :
+- la collecte centralisée des journaux,
+- l’application de règles statiques,
+- l’analyse manuelle par les analystes SOC.
+
+Cette architecture constitue une base fonctionnelle, mais présente des limites structurelles face à la volumétrie et à la complexité croissante des menaces.
+
+---
+
+### 1.2 Architecture logique – SOC sans IA
+
+```text
+Sources SI
+(IAM, Réseau, Applications, Cloud, API)
+        |
+        v
+Collecte & Normalisation
+(Agents, parsing, enrichissement)
+        |
+        v
+SIEM / Data Lake Sécurité
+(Centralisation, indexation)
+        |
+        v
+Analyse par règles statiques
+(Signatures, seuils)
+        |
+        v
+SOC / Dashboard
+(Analyse humaine)
+        |
+        v
+Gouvernance & Reporting
