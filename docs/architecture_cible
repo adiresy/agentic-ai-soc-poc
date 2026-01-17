@@ -1,0 +1,28 @@
+Sources SI
+(IAM, Réseau, Applications, Cloud, API)
+        |
+        v
+Collecte & Normalisation
+(Agents, parsing, enrichissement)
+        |
+        v
+SIEM / Data Lake Sécurité
+(Centralisation, indexation)
+        |
+        v
+Analyse technique
+(Règles, UEBA, corrélation)
+        |
+        v
+🧠 IA LLM – LLaMA
+(Raisonnement contextuel,
+synthèse, recommandations)
+        |
+        v
+SOC / Dashboard
+(Décision humaine,
+scores de risque)
+        |
+        v
+Gouvernance & Audit
+(ISO 27001 / ISO 42001)
