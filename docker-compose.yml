@@ -1,8 +1,10 @@
-version: "3.9"
 services:
   soc-agent-poc:
     container_name: agentic-ai-soc-poc
     build: .
+    ports:
+      - "8501:8501"
+    command: streamlit run gui/dashboard.py
     volumes:
       - ./data:/app/data
     stdin_open: true

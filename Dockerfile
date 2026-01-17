@@ -1,9 +1,20 @@
 FROM python:3.10-slim
+
 WORKDIR /app
+
+ENV PYTHONPATH=/app
+
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+
 COPY src/ src/
+COPY scripts/ scripts/
+COPY gui/ gui/
 COPY data/ data/
-COPY governance/ governance/
 COPY docs/ docs/
-CMD ["python", "src/main.py"]
+COPY governance/ governance/
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "gui/dashboard.py"]
+
